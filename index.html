@@ -7,7 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Growth Graphers</title>
     <link rel="stylesheet" href="main.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-N8NEFZ8JCG"></script>
     <script>
@@ -17,8 +19,8 @@
 
         gtag('config', 'G-N8NEFZ8JCG');
     </script>
-
-
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script defer src="js/app.js"></script>
 </head>
 
 <body>
@@ -36,7 +38,9 @@
 
     <section class="container" id="hero_section">
         <h3 class="heading_one">We create brands that</h3>
-        <h3 class="txt-type">INSPIRE</h3>
+        <p class="typed_container">
+            <span class="txt-type"></span>
+        </p>
         <p class="paragraph_one">We are a strategic creative agency that creates and transforms brands to engage
             audiences and make change happen.</p>
     </section>
@@ -213,7 +217,7 @@
                     </p>
                 </div>
             </div>
-        </div>    
+        </div>
     </section>
 
     <section class="container" id="approach_section">
@@ -324,26 +328,32 @@
                 <h4 class="footer_heading">
                     Site Map
                 </h4>
-                <a href="#" class="site_links">Marketing</a>
-                <a href="#" class="site_links">UI/UX</a>
-                <a href="#" class="site_links">Tech</a>
-                <a href="#" class="site_links">About</a>
-                <a href="#" class="site_links">Contact</a>
-                <a href="#" class="site_links">Blog</a>
+                <a href="#" class="u_line site_links">Marketing</a>
+                <a href="#" class="u_line site_links">UI/UX</a>
+                <a href="#" class="u_line site_links">Tech</a>
+                <a href="#" class="u_line site_links">About</a>
+                <a href="#" class="u_line site_links">Contact</a>
+                <a href="#" class="u_line site_links">Blog</a>
             </div>
             <div class="footer_column">
                 <h4 class="footer_heading">
                     Contact
                 </h4>
                 <div class="contact_info">
-                    <img src="" alt="" class="contact_icon">
-                    <p class="contact_address">66 valingaton street 42 Block 42Bk London 2AD</p>
+                    <!-- <img src="" alt="" class="contact_icon"> -->
+                    <div class="contact_address">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>
+                            66 valingaton street 42 Block 42Bk London 2AD
+                        </p>
+                    </div>
                 </div>
                 <div class="contact_info">
-                    <img src="" alt="" class="contact_icon">
-                    <p class="contact_address">
-                    <pre>+91 123456789</pre>
-                    </p>
+                    <!-- <img src="" alt="" class="contact_icon"> -->
+                    <div class="contact_address">
+                        <i class="fa-solid fa-phone"></i>
+                        <pre>+91 123456789</pre>
+                    </div>
                 </div>
 
                 <h4 class="social_heading">Follow</h4>
@@ -366,6 +376,8 @@
             </div>
         </div>
     </footer>
+    <p id="typed" style="display: block; font-size: 100px;"></p>
+
 
 </body>
 
