@@ -1,0 +1,318 @@
+/* Reset */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* Reset End */
+
+/* Font */
+@import url('http://fonts.cdnfonts.com/css/sofia-pro');
+
+html{
+    scroll-behavior: smooth;
+    font-family: 'Sofia Pro', sans-serif;
+}
+
+body{
+    background-color: #000;
+    color: #fff;
+    /* font-size: 16px; */
+    line-height: 1;
+    font-weight: 400;
+}
+.container{
+    padding-inline: 5rem;
+    width: 100%;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding-block: 2rem;
+    align-items: center;
+}
+
+.nav_items_list{
+    display: flex;
+    gap: 4rem;
+}
+
+.list_items{
+    position: relative;
+    font-size: 1.25rem;
+    line-height: 2.5rem;
+    text-decoration: none;
+    transition: all 300ms ease-in-out;
+    color: #fff;
+}
+
+.list_items:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color:  #20C997;
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-out;
+}
+
+.list_items:hover{
+    color: #20C997;
+}
+
+.list_items:hover:after {
+    transform: scaleX(0.8);
+    transform-origin: bottom left;
+}
+
+.header_cta{
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    border: 1px solid #fff;
+    border-radius: 2rem;
+    padding: .5rem 1.25rem;
+    color: #fff;
+    text-decoration: none;
+    transition: all 300ms ease-in-out;
+    transform-origin: top left;
+    position: relative;
+}
+
+.header_cta:hover,
+.header_cta:focus {
+  box-shadow: inset 6.5em 0 0 0 #20C997;
+}
+
+section{
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    padding-block: 2rem;
+}
+
+#hero_section{
+    min-height: calc(100vh - 5.5rem);
+}
+
+#brand_section{
+    min-height: 100vh;
+    background-color: #20C997;
+    color: #fff;
+}
+
+.cards_section{
+    min-height: 100vh;
+    /* width: 100%; */
+    background-color: #fff;
+    color: #000;
+    text-align: left;
+    justify-items: left;
+    align-content: start;
+
+}
+
+#approach_section{
+    min-height: 100vh;
+    background-color: #fff;
+    color: #000;
+    text-align: center;
+    justify-items: center;
+}
+.heading_one{
+    font-size: 4.75rem;
+    margin-bottom: 1.75rem;
+    font-weight: 600;
+}
+
+.heading_two{
+    font-size: 2.25rem;
+    margin-bottom: 1.5rem;
+    font-weight: 800;
+}
+
+.heading_three{
+    font-size: 2.25rem;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+}
+
+.paragraph_one{
+    font-size: 1.5rem;
+    line-height: 1.5;
+    max-width: 50%;
+    margin-inline: auto;
+    margin-bottom: 2.25rem;
+}
+.paragraph_two{
+    font-size: 1.25rem;
+    line-height: 1.5;
+    max-width: 50%;
+    /* margin-inline: auto; */
+    margin-bottom: 2.25rem;
+}
+.paragraph_three{
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-block: .75rem;
+    font-weight: 600;
+}
+.txt-type{
+    font-size: 8.5rem;
+    color: #20C997;
+    margin-bottom: 3.5rem;
+}
+
+
+
+.cta{
+    display: flex;
+    white-space: nowrap;
+    text-decoration: none;
+    width: max-content;
+    padding: 1.25rem 3.75rem;
+    border-radius: 2rem;
+}
+.cta_yellow{
+    margin-inline: auto;
+    color: #000;
+    background-color: #FEDB00;
+}
+
+.brand_img{
+    margin: 2rem auto;
+}
+
+.cards_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+
+    /* padding-inline: 2rem; */
+}
+
+.card{
+    background-color: #fff;
+    box-shadow: -5px 6px 9px -7px rgba(0,0,0,0.62);
+    transition: all 300ms ease-in-out;
+    border-radius: .75rem;
+}
+.card:hover .card_img{
+    transform: scale(1.1);
+}
+
+.card:hover{
+    background-color: #000;
+    color: #fff;
+}
+.card_img_container{
+    min-width: 100%;
+    overflow: hidden;
+}
+.card_img{
+    width: 100%;
+    object-fit: cover;
+    transition: all 300ms ease-in-out;
+}
+
+.card_description_container{
+    padding: 2.5rem 1rem;
+}
+.card_heading{
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.card_text{
+    font-size: 1.05rem;
+    font-weight: 600;
+    line-height: 2;
+    opacity: 0.7;
+}
+
+.approach_grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 4rem;
+    justify-content: space-around;
+}
+
+.approach_name{
+    font-size: 1.75rem;
+    font-weight: 600;
+    margin-block: 2rem;
+}
+
+.approach_list{
+    margin-top: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+.approach_list_item{
+    display: flex;
+    flex-direction: row;
+    gap:1rem;
+    align-items: center;
+}
+
+.approach_list_text{
+    text-align: left;
+}
+.approach_item{
+    padding: 2rem 4rem 4rem 4rem;
+    border-radius: 20px;
+}
+.approach_item:hover{
+    background-color: #20C997;
+}
