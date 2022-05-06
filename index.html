@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Growth Graphers</title>
     <link rel="stylesheet" href="main.css">
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-N8NEFZ8JCG"></script>
     <script>
@@ -26,11 +26,11 @@
     <header class="container">
         <img class="header_logo" src="images/gg_logo.svg" alt="Growth Graphers Logo">
         <div class="nav_items_list">
-            <a href="" class="list_items">Marketing</a>
-            <a href="" class="list_items">UI/UX</a>
-            <a href="" class="list_items">Tech</a>
-            <a href="" class="list_items">About</a>
-            <a href="" class="header_cta">Contact</a>
+            <a href="#marketing_section" class="list_items">Marketing</a>
+            <a href="#ui_ux_section" class="list_items">UI/UX</a>
+            <a href="#ui_ux_section" class="list_items">Tech</a>
+            <a href="#" class="list_items">About</a>
+            <a href="#contact_section" class="header_cta">Contact</a>
         </div>
     </header>
 
@@ -301,7 +301,7 @@
             <h4 class="heading_four">
                 Address
             </h4>
-            <address>
+            <address class="paragraph_two">
                 66 valingaton street
                 Block 42Bk, London
                 2AD
@@ -310,9 +310,9 @@
         </div>
     </section>
 
-    <footer class="container">
-        <div class="footer_top">
-            <div class="footer_column">
+    <footer>
+        <div class="footer_top container">
+            <div class="footer_branding">
                 <img src="images/gg_logo.svg" alt="" class="footer_logo">
                 <h3 class="footer_tagline">
                     The creative
@@ -320,7 +320,7 @@
                     business.
                 </h3>
             </div>
-            <div class="footer_column">
+            <div class="footer_column" id="site_links">
                 <h4 class="footer_heading">
                     Site Map
                 </h4>
@@ -348,13 +348,16 @@
 
                 <h4 class="social_heading">Follow</h4>
                 <div class="social_links">
-                    <img src="" alt="LinkedIN" class="social_icon">
+                    <i class="fa-brands fa-linkedin-in social_icon"></i>
+                    <i class="fa-brands fa-twitter social_icon"></i>
+                    <i class="fa-brands fa-medium social_icon"></i>
+                    <!-- <img src="" alt="LinkedIN" class="social_icon">
                     <img src="" alt="Twitter" class="social_icon">
-                    <img src="" alt="Medium" class="medium_icon">
+                    <img src="" alt="Medium" class="medium_icon"> -->
                 </div>
             </div>
         </div>
-        <div class="footer_bottom">
+        <div class="footer_bottom container">
             <div class="footer_b_items">
                 <a href="" class="policy_link">Privacy Policy</a>
                 <a href="" class="policy_link">Website Terms</a>
